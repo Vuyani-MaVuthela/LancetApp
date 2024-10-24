@@ -1,5 +1,5 @@
 Getting started
 
-Run - npm I - to install all packages
+- Run - npm I - to install all packages
 
-Run - npm run dev - to test
+- Run - npm run dev - to test
