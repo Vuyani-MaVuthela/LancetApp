@@ -1,0 +1,29 @@
+{
+  "Patient": {
+    "PatientId": "e9874aaa-ac57-47c9-af55-8e6d49da470f",
+    "PatientName": "testname1",
+    "PatientAddress": {
+      "Street": "street",
+      "City": "city",
+      "State": "state",
+      "PostalCode": "211221"
+    }
+  },
+  "Requisitions": [
+    {
+      "RequisitionId": "0b95c283-c83b-4fc2-b43f-1c085debdff8",
+      "DateSubmitted": "2024-10-23T20:08:00Z",
+      "ReferringPhysician": "Physician",
+      "Tests": [
+        {
+          "TestId": "1fe9cbf6-5e01-43e5-a480-a2381802a0d6",
+          "TestName": "tests",
+          "Comment": "comment",
+          "NormalRange": 1,
+          "TestResult": 2
+        }
+      ]
+    }
+  ],
+  "AvatarFilePath": ""
+}

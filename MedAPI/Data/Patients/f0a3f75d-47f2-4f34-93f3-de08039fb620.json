@@ -1,0 +1,29 @@
+{
+  "Patient": {
+    "PatientId": "f0a3f75d-47f2-4f34-93f3-de08039fb620",
+    "PatientName": "testname2",
+    "PatientAddress": {
+      "Street": "street",
+      "City": "city",
+      "State": "state",
+      "PostalCode": "211221"
+    }
+  },
+  "Requisitions": [
+    {
+      "RequisitionId": "05de3f40-95be-4529-a89e-f7dd6308ecc5",
+      "DateSubmitted": "2024-10-23T20:17:00Z",
+      "ReferringPhysician": "Physician",
+      "Tests": [
+        {
+          "TestId": "53840e99-961d-46ae-9e11-8a29d27a392d",
+          "TestName": "tests",
+          "Comment": "comment",
+          "NormalRange": 1,
+          "TestResult": 2
+        }
+      ]
+    }
+  ],
+  "AvatarFilePath": "..\\lancet-app\\public\\Avatars\\f0a3f75d-47f2-4f34-93f3-de08039fb620.jpg"
+}

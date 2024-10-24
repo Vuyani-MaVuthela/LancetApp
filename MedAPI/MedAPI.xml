@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MedAPI</name>
+    </assembly>
+    <members>
+        <member name="M:MedAPI.API.Controllers.AvatarController.UploadAvatar(System.Guid,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Uploads an avatar for a specific patient.
+            </summary>
+            <param name="id">The unique identifier of the patient.</param>
+            <param name="avatar">The avatar file to be uploaded.</param>
+            <returns>The URL of the uploaded avatar.</returns>
+            <response code="200">Returns the URL of the uploaded avatar.</response>
+            <response code="400">If the file is invalid.</response>
+        </member>
+        <member name="M:MedAPI.API.Controllers.AvatarController.GetAvatar(System.Guid)">
+            <summary>
+            Retrieves the avatar for a specific patient.
+            </summary>
+            <param name="id">The unique identifier of the patient.</param>
+            <returns>The avatar image.</returns>
+            <response code="200">Returns the avatar image.</response>
+            <response code="404">If the avatar is not found.</response>
+        </member>
+        <member name="M:MedAPI.API.Controllers.AvatarController.DeleteAvatar(System.Guid)">
+            <summary>
+            Delete the avatar for a specific patient.
+            </summary>
+            <param name="id">The unique identifier of the patient.</param>
+            <returns>The avatar image.</returns>
+            <response code="200">Returns the avatar image.</response>
+            <response code="404">If the avatar is not found.</response>
+        </member>
+        <member name="M:MedAPI.API.Controllers.PatientController.GetPatient(System.Guid)">
+            <summary>
+            Retrieves a patient by their unique identifier.
+            </summary>
+            <param name="id">The unique identifier of the patient.</param>
+            <returns>The patient details.</returns>
+        </member>
+        <member name="M:MedAPI.API.Controllers.PatientController.CreatePatient(MedAPI.Core.Entities.PatientProfile)">
+            <summary>
+            Creates a new patient profile.
+            </summary>
+            <param name="patientProfile">The patient profile to be created.</param>
+            <returns>The created patient profile.</returns>
+            <response code="201">Returns the created patient profile.</response>
+            <response code="400">If the patient profile is invalid.</response>
+        </member>
+        <member name="M:MedAPI.API.Controllers.PatientController.UpdatePatient(System.Guid,MedAPI.Core.Entities.PatientProfile)">
+            <summary>
+            Updates an existing patient profile.
+            </summary>
+            <param name="id">The unique identifier of the patient to update.</param>
+            <param name="patientProfile">The updated patient profile.</param>
+            <returns>No content if the update is successful.</returns>
+            <response code="204">Returns no content if successful.</response>
+            <response code="404">If the patient profile is not found.</response>
+            <response code="400">If the patient profile is invalid.</response>
+        </member>
+    </members>
+</doc>
